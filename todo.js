@@ -1,4 +1,5 @@
 const todoItem = document.getElementById("todoItem");
+todoItem.addEventListener("submit", addTodoItem(todoItem));
 
 let todoItemList = [];
 
@@ -6,7 +7,10 @@ function addTodoItem(text) {
   todoItemList.push(text);
 }
 
-todoItem.addEventListener("submit", addTodoItem(todoItem));
+function saveLocalStorage(list){
+    console.
+}
+
 
 function init() {
   addTodoItem(todoItem);
