@@ -7,8 +7,8 @@ function addTodoItem(text) {
   todoItemList.push(text);
 }
 
-function saveLocalStorage(list){
-    console.
+function saveLocalStorage(list) {
+  console.
 }
 
 
@@ -18,3 +18,4 @@ function init() {
 }
 
 init();
+// git work-desktop
