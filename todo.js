@@ -1,21 +1,20 @@
-const todoItem = document.getElementById("todoItem");
-todoItem.addEventListener("submit", addTodoItem(todoItem));
+const todoForm = document.querySelector(".js-todoForm");
+const todoInput = todoForm.querySelector("input");
+const todoList = document.querySelector(".js-todoList");
 
-let todoItemList = [];
-
-function addTodoItem(text) {
-  todoItemList.push(text);
+function handleInput(event) {
+  event.preventDefault();
+  const inputValue = todoInput.value;
+  return inputValue;
 }
 
-function saveLocalStorage(list) {
-  console.
+function saveTodo(inputValue) {
+  localStorage.setItem("test", JSON.stringify(inputValue));
 }
-
 
 function init() {
-  addTodoItem(todoItem);
-  console.log(todoItemList);
+  handleInput();
+  saveTodo();
 }
 
 init();
-// git work-desktop

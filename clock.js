@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+const header = document.querySelector(".js-header");
 const clock = header.querySelector("#clock");
 
 function paintClock() {
